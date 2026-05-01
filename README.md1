@@ -1,15 +1,11 @@
-# MotoIntel AI
-### Predictive Diagnostic Interface for Smart Vehicles
-
-Developed by **PrAv**
-
-## Technical Overview
-MotoIntel AI is a diagnostic telemetry system that processes engine data to determine mechanical reliability. By analyzing thermal, seismic, and electrical nodes, the system provides a real-time Health Index.
-
-## Architecture
-- **Interface:** Streamlit / Python
-- **Analytics:** Neural-Threshold Matrix
-- **Hardware:** ESP32 / IoT Connectivity
-
-## Status
-Operational. V1.0.
+MotoIntel AI
+Predictive Diagnostic Interface for Smart Vehicles
+Developed by PrAv
+Technical Overview
+MotoIntel AI is an intelligent diagnostic telemetry system designed to evaluate mechanical reliability in real time. By continuously analyzing engine parameters across thermal, vibrational, and electrical domains, the system computes a dynamic Health Index that reflects overall vehicle condition.
+System Architecture
+Interface: Streamlit (Python-based UI)
+Analytics Engine: Neural-Threshold Matrix Model
+Hardware Integration: ESP32 with IoT Connectivity
+Current Status
+Operational — Version 1.0
