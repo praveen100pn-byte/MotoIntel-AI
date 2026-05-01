@@ -5,7 +5,7 @@ from datetime import datetime
 # --- 1. SYSTEM & DATA CONFIG ---
 st.set_page_config(page_title="MotoIntel AI | PrAv", layout="wide", page_icon="🏍️")
 
-# Capture URL Parameters (The "Lazy Fix")
+# Capture URL Parameters
 params = st.query_params
 url_temp = float(params.get("temp", 90))
 url_rpm = float(params.get("rpm", 4500))
@@ -68,7 +68,7 @@ with c2:
         }
     ))
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', font={'color': "#00d4ff", 'family': "Orbitron"}, margin=dict(t=0, b=0, l=10, r=10))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 with c3:
     st.markdown('<div class="metric-card">', unsafe_allow_html=True)
@@ -87,3 +87,4 @@ else:
         st.error(a)
 
 st.markdown(f"<p style='text-align: right; color: #333; font-size: 10px; letter-spacing: 2px;'>NODE_SECURE | {datetime.now().strftime('%Y-%m-%d')} | PR AV</p>", unsafe_allow_html=True)
+
